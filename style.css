@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, #0f172a,#1e293b, #4c1d95);
+    color: white;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: 2s;
+    background: linear-gradient(13deg,#4c1d95, #7e22ce, #2563eb);
+    margin-bottom: 40px;
+}
+.container:hover{
+    transform: scale(1.05);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+.head h1{
+    color: white;
+}
+.container img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: zoomIn 1.2s ease-out;
+}
+.head h1{
+    animation: slideRight 1s ease-out;
+}
+nav{
+    animation: slideLeft 1s ease-out;
+}
+
+.welcome{
+    animation: fadeUp 1.5s ease-out;
+}
+.container img:hover{
+    transform: scale(1.08);
+    transition: 0.3s;
+}
+@keyframes zoomIn{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideRight{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(13deg,#4c1d95, #7e22ce, #2563eb);
+    margin-bottom: 40px;
+    padding: 30px;
+    transition: 2s;
+    border-radius: 10px;
+}
+.welcome:hover{
+    transform: scale(1.1);
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 2s;
+    background: linear-gradient(13deg,#4c1d95, #7e22ce, #2563eb);
+    margin-bottom: 40px;
+}
+.about:hover{
+    transform: scale(1.1);
+}
+.about p{
+    font-size: large;
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    background: linear-gradient(13deg,#4c1d95, #7e22ce, #2563eb);
+    padding: 30px;
+    transition: 2s;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+.projects:hover {
+    transform: scale(1.1);
+}
+.project-card {
+    display: block;
+    max-width: 40%;
+    background: linear-gradient(135deg, #0f172a, #0891b2, #2563eb);
+    padding: 30px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.project-card:hover{
+    scale(1.05);
+}
+.project-card a {
+    color: bisque;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    background: linear-gradient(13deg,#4c1d95, #7e22ce, #2563eb);
+    padding: 30px;
+    border-radius: 10px;
+    transition: 2s;
+    margin-bottom: 40px;
+}
+.skills:hover{
+    transform: scale(1.1);
+}
+.skills-card {
+    display: block;
+    max-width: 13%;
+    background: linear-gradient(135deg, #0f172a, #0891b2, #2563eb);
+    padding: 20px;
+    border-radius: 20px;
+    transition: 1s;
+    height: fit-content;
+}
+.contact {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.cont a {
+    color: white;
+    text-decoration: none;
+}
+#about h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#skills h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#projects h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+@media (max-width: 768px){
+    
+    nav {
+        flex-direction: column;
+        gap: 3px;
+    }
+    .nav a {
+        color: white;
+        text-decoration: none;
+        font-size: large;
+    }
+    .projects {
+        flex-direction: column;
+        padding: 2px;
+        margin-bottom: 6px;
+    }
+    .project-card{
+        width: 50%;
+        max-width: 260px;
+        padding: 50px;
+    }
+    body {
+        padding: 2px;
+        margin: 2px;
+        margin-top: 20px;
+    }
+    .welcome{
+        margin-bottom: 6px;
+    }
+    .welcome:hover{
+        transform: none;
+    }
+    .skills {
+        margin-bottom: 6px;
+        flex-direction: column;
+    }
+    .skills:hover{
+        transform: none;
+    }
+    .welcome:hover{
+        transform: none;
+    }
+    .projects:hover{
+        transform: none;
+    }
+    .about:hover{
+        transform: none;
+    }
+    .skills-card {
+        width: 100%;
+        max-width: 260px;
+    }
+    .container img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        animation: zoomIn 1.2s ease-out;
+    }
+    .head h1{
+        animation: slideRight 1s ease-out;
+}
+    nav{
+        animation: slideLeft 1s ease-out;
+    }
+
+    .welcome{
+        animation: fadeUp 1.5s ease-out;
+    }
+    .container img:hover{
+        transform: scale(1.08);
+        transition: 0.3s;
+    }
+    @keyframes zoomIn{
+        from{
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        to{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes slideRight{
+        from{
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideLeft{
+        from{
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeUp{
+        from{
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+}
