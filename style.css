@@ -1,213 +1,150 @@
-.container {
-    max-width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    margin-top: 0px;
-    min-width: 100vh;
-}
-.first {
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 20%;
-    padding: 15px;
-    background-image: url(back.jpg.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    padding: 40px;
-}
-.pic {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
-    box-shadow: 0 0 20px rgba(76,175,80,0.8);
-    object-fit: cover;
-    gap: 10%;
-}
-.pic img {
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    transition: 3ms;
-}
-.pic img :hover {
-    transform: scale(1.5);
-}
-.pic h2 {
-    color: whitesmoke;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xx-large;
-}
-.scroll {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-.scroll a {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    font-size: x-large;
-}
-.about {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    transition: 1s;
-    background: rgba(255, 255,255,0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 15px;
-    padding: 25px;
-    margin-top: 10px;
-}
-.about hover {
-    transform: scale(1.08);
-}
-.about h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: x-large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.about p {
-    font-size: large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-.nav {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-.aim h2 {
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xx-large;
-}
-.about p {
-    font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.work {
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-    margin: 25px;
-}
-.experience h3 {
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: x-large;
-}
-.info p {
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: larger;
-}
-#experience h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xx-large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    transition: 1s;
-}
-#experience {
-    background-image: url(back3.jpg.jpeg);
-    background-repeat: no-repeat;
-    min-height: fit-content;
-    background-size: cover;
-    transition: 3ms;
-    background: linear-gradient(rgba(0,0,0,0,0.6),rgba(0,0,0,0.6)),url(back2.jpg.jpeg);
-    margin-top: 10%;
-}
-#experience hover {
-    transform: scale(1.1px);
-}
-.experience {
-    display: flex;
-    flex-direction: column;;
-    gap: 30px;
-}
-.experience img {
-    max-width: 300px;
-    height: 250px;
-}
-.info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.info img {
-    max-width: 350px;
-    height: 250px;
-}
-.img {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-.btn {
-    background-color: white;
-    color: white;
-    max-width: fit-content;
-    height: 40px;
-    display: block;
-    border: solid 1px green;
-    border-radius: 0px;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 8px;
-}
-.btn :hover{
-    transform: translateY(-3px);
-    transition: 0.3s;
-    background-color: darkgreen;
-}
-.link {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-.skill {
-    display: flex;
-    flex-direction: row;
-    color: black;
-    gap: 40px;
-    margin: 25px;
-    background: rgba(255,255,255,0.1,);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 15px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-.skill h3 {
-    color: brown;
-    font-size: x-large;
+body{
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    background:#fff;
+    overflow-x:hidden;
 }
-#skills h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xx-large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
+
+.container{
+    width:100%;
+    display:flex;
+    flex-direction:column;
 }
-.skill h4 {
-    font-size: larger;
+
+.first{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:40px;
+    background-image:url(back.jpg.jpeg);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
+
+.pic{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(76,175,80,.8);
+}
+
+.pic img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+    transition:.4s ease;
+}
+
+.pic img:hover{
+    transform:scale(1.05);
+}
+
+.pic h2{
+    color:#fff;
+    text-align:center;
+    font-size:32px;
+    font-family:Cambria,Cochin,Georgia,Times,'Times New Roman',serif;
+}
+
+.scroll{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+.nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.nav a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    transition:.3s;
+}
+
+.nav a:hover{
+    color:#00ff99;
+}
+
+.aim h2{
+    color:white;
+    font-size:36px;
+    line-height:1.4;
+    font-family:Cambria,Cochin,Georgia,Times,'Times New Roman',serif;
+}
+
+.link{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    color:white;
+    border:1px solid green;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    opacity:.9;
+}
+
+.about{
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:15px;
+    padding:25px;
+    transition:.3s;
+}
+
+.about:hover{
+    transform:scale(1.02);
+}
+
+.about h2{
+    text-align:center;
+    color:white;
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+.about p{
+    color:white;
+    font-size:19px;
+    line-height:1.8;
+    text-align:justify;
+}
+
 i{
     font-size:28px;
     margin-right:10px;
-    vertical-align:middle;
 }
 
 p{
@@ -215,203 +152,297 @@ p{
     align-items:center;
     gap:10px;
 }
-.project {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    color: white;
-}
-.project-card {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    width: 350px;
-    background: linear-gradient(135deg,black,darkblue);
-    border-radius: 10px;
+#experience{
+    margin-top:60px;
+    padding:40px;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(back2.jpg.jpeg);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
+#experience h2{
+    color:white;
+    font-size:34px;
+    text-align:center;
+    margin-bottom:35px;
+    font-family:Cambria,Cochin,Georgia,Times,'Times New Roman',serif;
+}
 
-.button a {
-    background-color: green;
-    color: white;
-    max-width: fit-content;
-    height: 30px;
-    display: block;
-    border: solid 1px green;
-    border-radius: 0px;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 8px;
+.work{
+    display:flex;
+    gap:60px;
+    margin-bottom:50px;
+    align-items:flex-start;
 }
-#projects h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xx-large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    transition: 1s;
-}
-#contact{
-    background-image: url(contact.jpg.jpeg);
-    background-position: center;
-    background-size: cover;
-    min-height: fit-content;
-    margin-top: 4%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-}
-.contact {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-image: url(contact.jpg.jpeg);
-    background-position: center;
-    background-size: cover;
-    min-height: 50%;
-    padding: 30px;
-    gap: 35px;
-}
-.contact-card{
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-.contact-card a{
-    text-decoration: none;
-    color: white;
-    font-size: large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.footer {
-    color: white;
-    font-size: large;
-}
-@media (max-width:768px) {
-    .container {
-        width: 100%;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        margin-top: 0px;
-        min-width: 100vh;
-    }
-    .first {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 20%;
-        padding: 15px;
-        background-image: url(back11.jpg.jpeg);
-        background-position: center;
-        background-size: cover;
 
-    }
-    .pic {
-        display: flex;
-        flex-direction: column;
-        margin-left: 5%;
-        box-shadow: 0 0 20px rgba(76,175,80,0.8);
-        object-fit: cover;
-        gap: 10%;
-    }
-    .pic img {
-        border-radius: 50%;
-        max-height: 35%;
-        max-width: 35%;
-    }
-    .pic h2 {
-    color: whitesmoke;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xx-large;
+.experience{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
-.scroll {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+
+.experience h3{
+    color:white;
+    font-size:28px;
 }
-.scroll a {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    font-size: x-large;
+
+.experience img{
+    width:100%;
+    max-width:320px;
+    height:auto;
+    border-radius:10px;
 }
-.about {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    transition: 1s;
-    background: rgba(255, 255,255,0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 15px;
-    padding: 25px;
-    margin-top: 10px;
+
+.info{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
-.about hover {
-    transform: scale(1.08);
+
+.info p{
+    color:white;
+    font-size:18px;
+    line-height:1.8;
 }
-.about h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: x-large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.img{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
 }
-.about p {
-    font-size: large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+
+.info img{
+    width:100%;
+    max-width:320px;
+    height:auto;
+    border-radius:10px;
 }
-.nav {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+
+#skills{
+    padding:50px 30px;
 }
-.work {
-    display: flex;
-    flex-direction: column;
+
+#skills h2{
+    color:black;
+    font-size:34px;
+    text-align:center;
+    margin-bottom:35px;
+    font-family:Cambria,Cochin,Georgia,Times,'Times New Roman',serif;
 }
-#experience {
-    background-image: url(back22.jpg.jpeg);
-    background-repeat: no-repeat;
-    min-height: fit-content;
-    background-size: cover;
-    transition: 3ms;
-    background: linear-gradient(rgba(0,0,0,0,0.6),rgba(0,0,0,0.6)),url(back2.jpg.jpeg);
+
+.skill{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:30px;
+    border-radius:15px;
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.2);
 }
-.img {
-    display: flex;
-    flex-direction: column;
+
+.skill>div{
+    flex:1;
+    min-width:220px;
 }
-.skill {
-    display: flex;
-    flex-direction: column;
+
+.skill h3{
+    color:brown;
+    font-size:26px;
+    margin-bottom:15px;
 }
-.project {
-    display: flex;
-    flex-direction: column;
-    padding: 10%;}
+
+.skill p{
+    font-size:18px;
+    margin:12px 0;
+    color:black;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+#projects{
+    padding:50px 30px;
+}
+
+#projects h2{
+    color:white;
+    font-size:34px;
+    text-align:center;
+    margin-bottom:35px;
+    font-family:Cambria,Cochin,Georgia,Times,'Times New Roman',serif;
+}
+
+.project{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
 .project-card{
-    width: 100%;
-}
-.contact {
-    width: 100%;
-}
-#contact {
-    margin-left: 10%;
-}
-#experience {
-    margin-top :10%;
-}
-.experience img {
-    width: 100%;
+    flex:1 1 320px;
+    max-width:360px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+    border-radius:12px;
+    background:linear-gradient(135deg,black,darkblue);
+    color:white;
 }
 
-}    
+.project-card h3{
+    font-size:24px;
+}
+
+.project-card p{
+    line-height:1.7;
+}
+
+.button a{
+    display:inline-block;
+    padding:10px 18px;
+    background:green;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.button a:hover{
+    background:darkgreen;
+    transform:translateY(-3px);
+}
+
+#contact{
+    margin-top:50px;
+    padding:50px 20px;
+    background-image:url(contact.jpg.jpeg);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.contact{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:35px;
+}
+
+.contact-card{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.contact-card a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.footer{
+    margin-top:30px;
+    text-align:center;
+    color:white;
+    font-size:18px;
+}
+
+@media(max-width:768px){
+
+.first{
+    flex-direction:column;
+    text-align:center;
+    gap:35px;
+    padding:25px;
+    background-image:url(back11.jpg.jpeg);
+    background-position:center;
+    background-size:cover;
+}
+
+.pic{
+    width:100%;
+    box-shadow:none;
+}
+
+.pic img{
+    width:180px;
+    height:180px;
+}
+
+.nav{
+    justify-content:center;
+    gap:15px;
+}
+
+.nav a{
+    font-size:18px;
+}
+
+.aim h2{
+    font-size:28px;
+}
+
+.link{
+    justify-content:center;
+}
+
+.about{
+    padding:20px;
+}
+
+.about p{
+    text-align:left;
+    font-size:17px;
+}
+
+#experience{
+    padding:25px;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(back2.jpg.jpeg);
+    background-position:center;
+    background-size:cover;
+}
+
+.work{
+    flex-direction:column;
+    gap:30px;
+}
+
+.img{
+    flex-direction:column;
+}
+
+.experience img,
+.info img{
+    max-width:100%;
+}
+
+.skill{
+    flex-direction:column;
+}
+
+.project{
+    flex-direction:column;
+    align-items:center;
+}
+
+.project-card{
+    width:100%;
+    max-width:100%;
+}
+
+.contact{
+    flex-direction:column;
+    text-align:center;
+    gap:20px;
+}
+
+.footer{
+    font-size:15px;
+}
+
+}
